@@ -31,12 +31,11 @@ const author = {
 };
 
 const generateProducts = () => {
-  console.log(commonUtils);
   const amount = commonUtils.randomAmount(30, 100);
   const products = [];
   for (let i = 0; i < amount; i++) {
     let randomProductImg = commonUtils.randomAmount(0, 4);
-    let randomTier = commonUtils.randomAmount(0, 3);
+    let randomTier = commonUtils.randomAmount(0, 4);
     let price = 0;
     switch (tiers[randomTier]) {
       case "Legendary":
